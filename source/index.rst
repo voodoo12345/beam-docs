@@ -58,7 +58,7 @@ Things that make Ontology special include:
 Getting Started
 ---------------
 
-The simplest way to get started with Ontology is by visiting the `Ontology website <http://ont.io>`_, reading and understanding the materials posted there and joining ONT Global Community on Telegram (https://t.me/OntologyNetwork) for updates and discussions.
+The simplest way to get started with Ontology is by visiting the `Ontology website <http://ont.io>`_, reading and understanding the materials posted there and joining ONT Global Community on Telegram (https://t.me/OntologyNetwork) and Discord (https://discord.gg/4TQujHj) for updates and discussions.
 
 .. danger:: Ontology is extremely new and experimental technology. No guarantees can be provided by anyone whatsoever. Use it at your own risk. Make sure you know what you are doing, especially if there is money involved.
 
@@ -69,7 +69,7 @@ Just like any other cryptocurrency, using Ontology requires learning and underst
 
 To lean more about how cryptocurrencies work in general and Ontology in particular please visit our :ref:`Resources` page
 
-Once you familiarized yourself with key ideas and concepts, it is recommended to start from connecting to our Testnet. The simplest way to do that is by downloading and installing our Desktop Wallet and following instructions in :ref:`desktop_wallet_guide`.
+Once you familiarized yourself with key ideas and concepts, it is recommended to start from connecting to our Testnet. The simplest way to do that is by downloading and installing our Owallet Desktop Wallet and following instructions in :ref:`Owallet_desktop_wallet_guide`.
 
 
 
@@ -79,7 +79,7 @@ Important differences from other cryptocurrencies
 
 Ontology has several important differences from most other existing cryptocurrencies which are very important to understand. Please review the following information carefully.
 
-**The concept of **Address** is completely different**
+**The concept of **digital identity** is completely different with traditional wallet address**
 
 In most cryptocurrencies Address is a hashed public key for which the owner of that Address knows the corresponding private key. In order to transfer funds, the Sender should only know the Address of the Receiver in order to create a unilateral transaction. *The Sender is not aware of whether the Receiver is online or not or whether it even exists*. Once transaction to an Address is complete and added to the blockchain, Receiver that can prove knowledge of the private key corresponding the Address can control this UTXO (short for Unspent Transaction Output).
 
