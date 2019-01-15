@@ -3,10 +3,6 @@
 Glossary
 ========
 
-.. _address:
-.. _addresses:
-.. _sbbs address:
-.. _sbbs addresses:
 
 .. _blockchain:
 
@@ -19,21 +15,16 @@ Blockchain
 Block
    a set of data and associated header containing a timestamp & link to the previous set of data.
 
-    
-.. _blockchain:
 
-Blockchain
-    The blockchain is a public record of Beam transactions. The blockchain can be downloaded and verified by all Beam nodes to make sure the transaction history is valid and no `double spending <https://en.wikipedia.org/wiki/Double-spending>`_ occurs. In Beam, a compacted version of the blockhain is maintained by each node using the `cut through`_ feature of `mimblewimble`_ which enables new nodes to only download minimal amount of information to start mining and verifying new blocks.
-
-.. _blockchain explorer:
+.. _BlockchainExplorer:
 
 Blockchain Explorer
-	a search tool that locates blockchain data using a hash and enables analysis of the data. 
+   a search tool that locates blockchain data using a hash and enables analysis of the data. 
 
-.. _block height:
+.. _blockheight:
 
 Block height
-	the number of blocks, other than the genesis block, preceding a particular block on a blockchain.
+   the number of blocks, other than the genesis block, preceding a particular block on a blockchain.
 
 
 
@@ -44,26 +35,40 @@ Cryptocurrency
 	a digital asset that uses cryptography for its issuance and for transaction validation.
 
 
-.. _Genesis Block:
+.. _GenesisBlock:
 
 Genesis Block
 	initial set of data and associated header in a blockchain.
 
-.. _Hash Value:
+.. _HashValue:
 
 
 Hash Value
 
 	the numeric result of applying a hash algorithm to data.
 
+.. _SmartContract:
+
+
+Smart Contract
+
+	a computer software representation of business logic and programming language instructions used to transfer value on blockchain.
+	
 .. _Oracle:
 
 Oracle
 
 	an external, trusted source of information used to inform a decision or an action on a blockchain.
+	
+.. _P2P:
 
+Peer-to-Peer (P2P)
+     a network communications technology in which connected computers can act as both client and server to share resources without the use of a centralized server
+.. _token:
+Token 
+    a digital representation of any asset, object, or data value
 
-.. _wallet password:
+.. _walletpassword:
 
 Walet Password
 	
