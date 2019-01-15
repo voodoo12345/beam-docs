@@ -7,7 +7,7 @@ Blockchain Explorer
 ===================
 
 
-.. note:: Blockchain Explorer for Testnet 4 is currently running at https://t4.explorer.beam.mw
+.. note:: Blockchain Explorer for MainNet is currently running at https://explorer.ont.io/
 
 .. warning:: The following document is still under construction and is subject to changes
 
