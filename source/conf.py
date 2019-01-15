@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Beam'
-copyright = '2018, Beam Team'
-author = 'Beam Team'
+project = 'Ontology'
+copyright = '2019, Ontology Team'
+author = 'Ontology Team'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = 'December 2018'
+release = 'January 2019'
 
 
 # -- General configuration ---------------------------------------------------
@@ -107,7 +107,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Beamdoc'
+htmlhelp_basename = 'Ontologydoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -134,8 +134,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Beam.tex', 'Beam Documentation',
-     'Beam Team', 'manual'),
+    (master_doc, 'Ontology.tex', 'Ontology Documentation',
+     'Ontology Team', 'manual'),
 ]
 
 
@@ -144,7 +144,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'beam', 'Beam Documentation',
+    (master_doc, 'Ontology', 'Ontology Documentation',
      [author], 1)
 ]
 
@@ -155,8 +155,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Beam', 'Beam Documentation',
-     author, 'Beam', 'One line description of project.',
+    (master_doc, 'Ontology', 'Ontology Documentation',
+     author, 'Ontology', 'A new dimension of digital world.',
      'Miscellaneous'),
 ]
 
