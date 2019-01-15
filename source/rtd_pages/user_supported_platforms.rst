@@ -6,7 +6,7 @@
 Supported Platforms
 ===================
 
-Beam Node and Beam Wallet are currently supported on the following platforms:
+Ontology Node and Ontology Wallet are currently supported on the following platforms:
 
 	:fa:`linux` ``64-bit`` Linux OS Ubuntu 14.04 LTS Trusty Tahr, Ubuntu 16.04 LTS Xenial Xerus, Ubuntu 18.04 LTS Bionic Beaveр
 	:fa:`microchip` ``64-bit`` Processor
@@ -24,7 +24,7 @@ Beam Node and Beam Wallet are currently supported on the following platforms:
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
 
 
-.. attention:: At the moment Beam only works on processors that support AVX instruction set. 
+.. attention:: At the moment Ontology only works on processors that support AVX instruction set. 
 
 
-.. note:: Please report any issues you might encounter while running BEAM software on your system. 
+.. note:: Please report any issues you might encounter while running Ontology software on your system. 
