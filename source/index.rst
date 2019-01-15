@@ -1,11 +1,8 @@
 .. _root:
 
-.. image:: rtd_pages/images/beam-logo.jpg
-   :scale: 15
-   :align: right
 
 
-Welcome to Beam documentation!
+Welcome to Ontology documentation!
 ==============================
 
 
@@ -14,65 +11,61 @@ Welcome to Beam documentation!
 Announcement
 ------------
 
-.. note:: Beam is currently in Mainnet.
+.. note:: Ontology is currently in Mainnet. Latest Version : v1.6.0 
 
-	Rules Signature: ed91a717313c6eb0
+	Download binaries from: `Ontology Downloads Page <https://github.com/ontio/ontology/releases>`_
 
-	Download binaries from: `Beam Downloads Page <http://beam.mw/downloads>`_
-
-	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
+	Source code: `Ontology Github <https://github.com/ontio/ontology>`_
 
 
 **TLDR;**
 
-:ref:`I want to Mine Beam<mining_beam>`
+:ref:`I want to run a node<mining_beam>`
 
-:ref:`I want to learn how to use Beam Desktop Wallet<desktop_wallet_guide>`
+:ref:`I want to learn how to use Owallet Desktop Wallet<desktop_wallet_guide>`
 
-:ref:`I want to learn how to use Beam Command Line Wallet<command_line_wallet_user_guide>`
+:ref:`I want to learn how to use Ontology Command Line Wallet<command_line_wallet_user_guide>`
 
 
 
-What is Beam?
+What is Ontology?
 --------------
 
-`Beam <https://beam.mw/>`_ is a next generation scalable, confidential cryptocurrency based on an elegant and innovative `Mimblewimble protocol <https://scalingbitcoin.org/papers/mimblewimble.txt>`_.
+`Ontology <https://ont.io/>`_ Ontology is a new generation of high-performance public blockchains and distributed 
+Trust Collaboration Platform. The infrastructure is scalable, stable, and allows low-level customization for different business requirements. <https://ont.io/wp/Ontology-technology-white-paper-EN.pdf>`.
 
-Things that make BEAM special include:
+Things that make Ontology special include:
 
-* Users have complete control over privacy - a user decides which information will be available and to which parties, having complete control over his personal data in accordance to his will and applicable laws.
+* Chain network - Interoperable with Multiple Public Blockchain and Consortium Blockchain.
 
-* Confidentiality without penalty - in BEAM confidential transactions do not cause bloating of the blockchain, avoiding excessive computational overhead or penalty on performance or scalability while completely concealing the transaction value.
+* High performance - 10,000+ TPS Single chain & layer 2 for scalability.
 
-* No trusted setup required.
+* Trust collaboration modules - To support distributed business scenarios include digital identity ,data exchange and rating .
 
-* Blocks are mined using Equihash Proof-of-Work algorithm.
+* Mature Dev tools - Use the IDE kits what you are used to.
 
-* Limited emission using periodic halving.
+* Widely supported Dev languages - Python, C#, JavaScript ,JAVA and Golang .
 
-* No addresses are stored in the blockchain - no information whatsoever about either the sender or the receiver of a transaction is stored in the blockchain.
+* Token economy - Dual token model with fixed supply Fair governance.
 
-* Superior scalability through compact blockchain size using the “cut-through” feature of Mimblewimble.
+* No premine. No ICO. Backed by a co-builder network.
 
-* No premine. No ICO. Backed by a treasury, emitted from every block during the first five years.
-
-* Implemented from scratch in C++.
 
 .. _start:
 
 Getting Started
 ---------------
 
-The simplest way to get started with Beam is by visiting the `Beam website <http://beam.mw>`_, reading and understanding the materials posted there and joining Beam Community on Telegram (https://t.me/BeamPrivacy) for updates and discussions.
+The simplest way to get started with Ontology is by visiting the `Ontology website <http://ont.io>`_, reading and understanding the materials posted there and joining ONT Global Community on Telegram (https://t.me/OntologyNetwork) for updates and discussions.
 
-.. danger:: Beam is extremely new and experimental technology. No guarantees can be provided by anyone whatsoever. Use it at your own risk. Make sure you know what you are doing, especially if there is money involved.
+.. danger:: Ontology is extremely new and experimental technology. No guarantees can be provided by anyone whatsoever. Use it at your own risk. Make sure you know what you are doing, especially if there is money involved.
 
-Just like any other cryptocurrency, using Beam requires learning and understanding what this all is about. If real money is involved, it also requires concern with security of the process.
+Just like any other cryptocurrency, using Ontology requires learning and understanding what this all is about. If real money is involved, it also requires concern with security of the process.
 
-.. hint:: That said, you can always safely play with Beam by connecting to the permanent Testnet.
+.. hint:: That said, you can always safely play with Ontology by connecting to the permanent Testnet.
 
 
-To lean more about how cryptocurrencies work in general and Beam in particular please visit our :ref:`Resources` page
+To lean more about how cryptocurrencies work in general and Ontology in particular please visit our :ref:`Resources` page
 
 Once you familiarized yourself with key ideas and concepts, it is recommended to start from connecting to our Testnet. The simplest way to do that is by downloading and installing our Desktop Wallet and following instructions in :ref:`desktop_wallet_guide`.
 
@@ -82,17 +75,17 @@ Once you familiarized yourself with key ideas and concepts, it is recommended to
 Important differences from other cryptocurrencies
 -------------------------------------------------
 
-Mimblewimble has several important differences from most other existing cryptocurrencies which are very important to understand. Please review the following information carefully.
+Ontology has several important differences from most other existing cryptocurrencies which are very important to understand. Please review the following information carefully.
 
 **The concept of **Address** is completely different**
 
 In most cryptocurrencies Address is a hashed public key for which the owner of that Address knows the corresponding private key. In order to transfer funds, the Sender should only know the Address of the Receiver in order to create a unilateral transaction. *The Sender is not aware of whether the Receiver is online or not or whether it even exists*. Once transaction to an Address is complete and added to the blockchain, Receiver that can prove knowledge of the private key corresponding the Address can control this UTXO (short for Unspent Transaction Output).
 
-In Mimblewimble there are no addresses at all and transaction are created **interactively** by both Sender and Receiver wallets. This means that in order to create a transaction, both wallets have to participate in the creation process and eventually co-sign the transaction before it is sent to the blockchain. 
+In Ontology there are no addresses at all and transaction are created **interactively** by both Sender and Receiver wallets. This means that in order to create a transaction, both wallets have to participate in the creation process and eventually co-sign the transaction before it is sent to the blockchain. 
 
-.. attention:: In Beam it is not possible to create a transaction unilaterally. Both Sender and Receiver have participate in transaction creation.
+.. attention:: In Ontology it is not possible to create a transaction unilaterally. Both Sender and Receiver have participate in transaction creation.
 
-To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Beam added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely merely private / public key pairs used to encrypt and decrypt these messages. 
+To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Ontology added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely merely private / public key pairs used to encrypt and decrypt these messages. 
 
 .. important:: SBBS Addresses are not recorded in the blockchain and are not used to control funds
 
@@ -100,13 +93,13 @@ You are encouraged to create a new SBBS Address for each transaction.
 
 **Wallet and Node concepts are slightly different**
 
-Beam documentation mentions terms Wallet and Node quite a lot and it sometimes causes confusion with users of other cryptocurrencies. 
+Ontology documentation mentions terms Wallet and Node quite a lot and it sometimes causes confusion with users of other cryptocurrencies. 
 
-Beam Wallet is a *light client* which stores information about UTXO that belong to it and has an ability to create new transactions by connecting to other wallets via :ref:`SBBS<sbbs>`. It does not store or verify the entire blockchain and can thus only work if connected to a Node.
+Ontology Wallet is a *light client* which stores information about UTXO that belong to it and has an ability to create new transactions by connecting to other wallets via :ref:`SBBS<sbbs>`. It does not store or verify the entire blockchain and can thus only work if connected to a Node.
 
 Beam Node, is a *full node* that downloads, validates and updates the entire blockchain state. 
 
-.. note:: Beam Desktop Wallet, provides options to run both as just the Wallet (connected to a remote node) and as a full node.
+.. note:: Ontology Desktop Wallet, provides options to run both as just the Wallet (connected to a remote node) and as a full node.
 
 .. attention:: It is always recommended to run a full node
 
@@ -114,9 +107,9 @@ Beam Node, is a *full node* that downloads, validates and updates the entire blo
 
 In most blockchains, information about current UTXOs and the transaction history can be recovered from the blockchain using only the :ref:`Seed Phrase<seed phrase>`. 
 
-In Beam, only UTXOs can be recovered from the blockchain. All other information, including transaction history and any other meta data are only stored locally in the Beam Wallet database and encrypted by :ref:`Wallet Password<wallet password>`. 
+In Ontology, only UTXOs can be recovered from the blockchain. All other information, including transaction history and any other meta data are only stored locally in the Beam Wallet database and encrypted by :ref:`Wallet Password<wallet password>`. 
 
-This means that if you run Beam Wallet on two different machines, transaction history **WILL NOT** be synchronized.
+This means that if you run Ontology Wallet on two different machines, transaction history **WILL NOT** be synchronized.
 
 This also means, that to preserve transaction history, or any additional meta data, it is necessary to regularly backup Beam Wallet database file.
 
@@ -139,7 +132,7 @@ To report issues and get support please perform the following steps:
    * Screen shots or any additional information you think is relevant
 
 
-2. Send an email to support@beam.mw (or testnet@beam.mw for testnet related issues).
+2. Send an email to contact@ont.io (or tech@ont.io for testnet related issues).
 
    You can also open an issue in github and follow the provided template.
 
