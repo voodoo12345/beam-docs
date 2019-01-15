@@ -31,7 +31,6 @@ Block height
 .. _Cryptocurrency:
 
 Cryptocurrency
-
 	a digital asset that uses cryptography for its issuance and for transaction validation.
 
 
