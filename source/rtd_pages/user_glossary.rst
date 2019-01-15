@@ -43,20 +43,17 @@ Genesis Block
 
 
 Hash Value
-
 	the numeric result of applying a hash algorithm to data.
 
 .. _SmartContract:
 
 
 Smart Contract
-
 	a computer software representation of business logic and programming language instructions used to transfer value on blockchain.
 	
 .. _Oracle:
 
 Oracle
-
 	an external, trusted source of information used to inform a decision or an action on a blockchain.
 	
 .. _P2P:
@@ -70,12 +67,10 @@ Token
 .. _walletpassword:
 
 Walet Password
-	
 	Wallet Password is a password that protects wallet and encrypts wallet database used to store information about UTXOs, transactions and any additional metadata stored by the wallet. Wallet Password is NOT used for or has any relation to ownership of the coins. If Wallet Password is lost, the wallet database can no longer be accessed and the transaction history and metadata will be lost. However it is possible to recover all the currently owned UTXOs, by creating a new wallet and initializing it using the same `seed phrase`_ as the original one. 
 
 .. _transaction:
 .. _transactions:
 
 Transactions
-
 	transactions contain of Inputs, Outputs and Kernels. Each input and output are represented by Pedersen Commiments in a form: P = v*H + b*G, where v is transaction value, b is the `blinding factor`_ and G and H are two known 'nothing up my sleeve' generator points on the same elliptic curve.
