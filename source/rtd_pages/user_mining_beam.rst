@@ -4,9 +4,9 @@
 .. warning:: The following document is still under construction and is subject to changes
 
 
-.. _mining_beam:
+.. _Stake_authorization:
 
-Mining Beam
+Stake authorization
 ===========
 
 Alike most cryptocurrencies, Beam relies on miners to add transactions to the blockchain. While all nodes in the Beam network confirm the validity of transactions, Beam counts on miners to take on the massive heavy lifting to guard the network.
