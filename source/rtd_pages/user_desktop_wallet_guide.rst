@@ -7,18 +7,14 @@
 Owallet Desktop Wallet User Guide
 =========================
 
-Using Beam Dekstop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
+Using Owallet Dekstop Wallet is the simplest way to start using Ontology Basic functions. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
 
 
 Downloading binaries
 --------------------
 
-Start dowloading here: https://beam.mw/downloads
+Start dowloading here: https://github.com/ontio/OWallet/releases
 
-Ensure that the communication between your browser and Beam's official website is encrypted by verifying that the padlock icon is displayed in its locked state on the URL bar.
-
-.. figure:: images/desktop/01_downloading/01.jpg
-   :alt: SSL lock in browser URL
 
 Download the Beam wallet app for your platform (Mac, Linux or Windows):
 
