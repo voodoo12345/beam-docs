@@ -1,7 +1,7 @@
 .. _root:
 
 .. image:: rtd_pages/images/Ontology_CH.png
-   :scale: 15
+   :scale: 10
    :align: right
 
 Welcome to Ontology documentation!
