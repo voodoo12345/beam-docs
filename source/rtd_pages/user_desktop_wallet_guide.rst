@@ -2,9 +2,9 @@
 
 .. warning:: The following document is still under construction and is subject to changes.
 
-.. _desktop_wallet_guide:
+.. _Owallet_desktop_wallet_guide:
 
-Desktop Wallet User Guide
+Owallet Desktop Wallet User Guide
 =========================
 
 Using Beam Dekstop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
