@@ -47,11 +47,11 @@ Linux
   $ cd $GOPATH/src/github.com/ontio/ontology
   $ glide install
 
-3. Go to the project folder and call
+3. Go to the project folder and call.
 ::
-make all
+  make all
 
-6. You'll find two executable programs: "ontology" binary and "tools/sigsvr" in your project folder.
+4. You'll find two executable programs: - `ontology` binary and - `tools/sigsvr` in your project folder.
 
 Mac
 ---
