@@ -43,43 +43,49 @@ The most common cause of this error is trying to send a transaction with insuffi
 
 
 
-<h1 align="center">FAQ</h1>
-<p align="center" class="version">Version 0.7.0 </p>
+Which programming language/s do you use?
+----------------------
 
-
-
-### Which programming language/s do you use?
 We use Golang to develop the Ontology blockchain. Besides Golang we use Python, Java, C++, and other languages to implement SDKs and applications. 
 
-
-### Is signature verification really the bottleneck? I thought that the processing the smart contract bytecode through the VM engine and LevelDB storage IO would be where nodes spent most of their time.
+Is signature verification really the bottleneck? 
+----------------------
+I thought that the processing the smart contract bytecode through the VM engine and LevelDB storage IO would be where nodes spent most of their time.
 Those all matter. Signature verification is an important part and can be parallelized. Hardware acceleration is another method.
 
-### Is there/will there be a RPC API in typescript SDK for communicating with the node (like in neon-js)?
-Yes. We support RESTful, WebSocket, and RPC API.
+Is there/will there be a RPC API in typescript SDK for communicating with the node (like in neon-js)?
+----------------------
+Yes. We support RESTful, WebSocket, and RPC API. The documentation link is （）
 
 
 
-### How do you generate ONG?
+How do you generate ONG?
+----------------------
 Now, on TestNet, ONG is not automatically assigned. If you transfer your ONT, you can receive approve ONG. You should invoke the transferFrom function to get your ONG.
 
-### When I connect to TestNet, how do I apply for ONT to test the transfer function? 
+When I connect to TestNet, how do I apply for ONT to test the transfer function? 
+----------------------
 Developers can visit the Ontology official website to apply for TestNet ONT. If developers use Smart Contract IDE (http://smartx.ont.io) to deploy smart contracts, IDE will support enough ONT for deployment or invocation.
 
 
-### Is a C# SDK being developed?
-Currently the core team support Java SDK and Typescript SDK. We encourage the community to develop SDKs for C#, Python, and so on.
+ Is a C# SDK being developed?
+----------------------
+Currently the core team support Java ，Python and Typescript SDK. We encourage the community to develop SDKs for C# and so on.
 
-### Is there a 1:1 relationship between privatekey and ontid? And a 1:1 relationship between privatekey and accountAddress?
+ Is there a 1:1 relationship between privatekey and ontid? And a 1:1 relationship between privatekey and accountAddress?
+----------------------
 Yes.
 
-### If I want to create a wallet to import multiple ONT IDs and accounts, do I need to supply multiple private keys?
+ If I want to create a wallet to import multiple ONT IDs and accounts, do I need to supply multiple private keys?
+----------------------
 Yes.
 
-### Is it possible to deploy the Ontology smart contract using C# with NeoVM in VS?
+ Is it possible to deploy the Ontology smart contract using C# with NeoVM in VS?
+----------------------
 Yes, it is supported.
 
-### Is there a doc list of all claim context templates? E.g. Schema for claimData and metadata.
+ Is there a doc list of all claim context templates? E.g. Schema for claimData and metadata.
+----------------------
 You can find more specific claim related docs in our GitHub documents (https://github.com/ontio/ontology-DID/blob/master/docs/en/claim_spec.md).
 
 ### Am I free to add any attribute to claimData, for example gender, address, and profession?
