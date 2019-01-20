@@ -1,11 +1,10 @@
 .. _dev_building_beam:
 
-Building Beam
+Building Ontology
 =============
 
-.. warning:: The following document is still under construction and is subject to changes
 
-The following document decribes how to build Beam binaries from sources located at: https://github.com/BeamMW/beam
+The following document decribes how to build Ontology binaries from sources located at: https://github.com/ontio/ontology
 
 
 Windows
