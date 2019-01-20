@@ -30,10 +30,14 @@ boost-binaries/1.68.0/boost_1_68_0-msvc-14.1-64.exe, also add BOOST_ROOT to the 
 Linux 
 -------------------------------
 
-1. Get from source code
+1. Create work directory and Get from source code
 
 ::
 
+  mkdir -p $GOPATH/src/github.com/ontio
+  
+  cd $GOPATH/src/github.com/ontio
+  
   git clone https://github.com/ontio/ontology.git
   
   or
