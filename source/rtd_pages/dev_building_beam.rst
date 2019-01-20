@@ -42,17 +42,19 @@ Linux
 
 
 2. Fetch the dependent third party packages with glide.
+
 ::
 
   $ cd $GOPATH/src/github.com/ontio/ontology
   $ glide install
 
 3. Go to the project folder and call.
+
 ::
 
   make all
 
-4. You'll find two executable programs: ## ontology binary and ## tools/sigsvr in your project folder.
+4. You'll find two executable programs: "ontology" binary and "tools/sigsvr" in your project folder.
 
 Mac
 ---
