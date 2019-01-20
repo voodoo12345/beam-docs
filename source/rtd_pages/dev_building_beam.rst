@@ -50,19 +50,26 @@ Linux (Ubuntu 14.04 and higher)
   g++ --version
 
 
-3. Install latest CMake 
+3. Get from source code
 
 ::
 
-  wget "https://cmake.org/files/v3.12/cmake-3.12.0-Linux-x86_64.sh"
-  sudo sh cmake-3.12.0-Linux-x86_64.sh --skip-license --prefix=/usr
+  git clone https://github.com/ontio/ontology.git
+  
+  or
+  
+  go get github.com/ontio/ontology
 
 
-4. Add proper QT 5.11 repository depending on your system https://launchpad.net/~beineri (for example, choose `Qt 5.10.1 for /opt Trusty` if you have Ubuntu 14.04), install `sudo apt-get install qt510declarative qt510svg` packages and add `export PATH=/opt/qt511/bin:$PATH`.
+4. Fetch the dependent third party packages with glide.
+::
 
-5. Go to Beam project folder and call `cmake -DCMAKE_BUILD_TYPE=Release . && make -j4`.
+  $ cd $GOPATH/src/github.com/ontio/ontology
+  $ glide install
 
-6. You'll find *Beam* binary in `bin` folder, `beam-wallet` in `ui` subfolder.
+5. Go to the project folder and call `make all`.
+
+6. You'll find two executable programs: "ontology" binary and "tools/sigsvr" in your project folder.
 
 Mac
 ---
