@@ -31,7 +31,6 @@ The requirements to build Ontology are:
 - Golang version 1.9 or later
 - Glide (a third party package management tool)
 - Properly configured Go language environment
-- Golang supported operating system
 
 
 
