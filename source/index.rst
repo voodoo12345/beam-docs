@@ -154,6 +154,7 @@ To report issues and get support please perform the following steps:
    rtd_pages/user_supported_platforms.rst
    rtd_pages/user_files_and_locations.rst
    rtd_pages/user_reporting_issues.rst
+   rtd_pages/FAQ.rst
    rtd_pages/user_troubleshooting.rst
    rtd_pages/user_resources.rst
    rtd_pages/user_glossary.rst
