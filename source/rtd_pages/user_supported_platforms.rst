@@ -24,6 +24,16 @@ Ontology Node and Ontology Wallet are currently supported on the following platf
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
 
 
+Software environment
+===================
+The requirements to build Ontology are:
+
+- Golang version 1.9 or later
+- Glide (a third party package management tool)
+- Properly configured Go language environment
+- Golang supported operating system
+
+
 .. attention:: At the moment Ontology only works on processors that support AVX instruction set. 
 
 
