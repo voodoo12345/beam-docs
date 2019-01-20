@@ -34,7 +34,5 @@ The requirements to build Ontology are:
 - Golang supported operating system
 
 
-.. attention:: At the moment Ontology only works on processors that support AVX instruction set. 
-
 
 .. note:: Please report any issues you might encounter while running Ontology software on your system. 
