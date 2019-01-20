@@ -1,2 +1,2 @@
-# beam-docs
-RTD Documentation for Beam
+# Ontology-docs
+Developer Documentation for Ontology
