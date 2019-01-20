@@ -27,29 +27,10 @@ boost-binaries/1.68.0/boost_1_68_0-msvc-14.1-64.exe, also add BOOST_ROOT to the 
 7. Go to CMake -> Cache -> Open Cache Folder -> beam (you'll find beam.exe in the beam subfolder, beam-wallet.exe in ui subfolder).
 
 
-Linux (Ubuntu 14.04 and higher)
+Linux 
 -------------------------------
 
-1. Install `gcc7` `boost` `ssl` packages.
-
-::
-
-  sudo add-apt-repository ppa:ubuntu-toolchain-r/test
-  sudo apt update
-  sudo apt install g++-7 libboost-all-dev libssl-dev -y
-
-
-2. Set it up so the symbolic links `gcc`, `g++` point to the newer version:
-::
-
-  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 \
-                           --slave /usr/bin/g++ g++ /usr/bin/g++-7 
-  sudo update-alternatives --config gcc
-  gcc --version
-  g++ --version
-
-
-3. Get from source code
+1. Get from source code
 
 ::
 
@@ -60,13 +41,15 @@ Linux (Ubuntu 14.04 and higher)
   go get github.com/ontio/ontology
 
 
-4. Fetch the dependent third party packages with glide.
+2. Fetch the dependent third party packages with glide.
 ::
 
   $ cd $GOPATH/src/github.com/ontio/ontology
   $ glide install
 
-5. Go to the project folder and call `make all`.
+3. Go to the project folder and call
+::
+make all
 
 6. You'll find two executable programs: "ontology" binary and "tools/sigsvr" in your project folder.
 
