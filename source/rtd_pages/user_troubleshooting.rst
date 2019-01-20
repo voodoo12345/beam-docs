@@ -44,12 +44,13 @@ The most common cause of this error is trying to send a transaction with insuffi
 
 
 Which programming language/s do you use?
-===============
-
+----------------------
+:: 
 We use Golang to develop the Ontology blockchain. Besides Golang we use Python, Java, C++, and other languages to implement SDKs and applications. 
 
 Is signature verification really the bottleneck? 
-===============
+----------------------
+:: 
 I thought that the processing the smart contract bytecode through the VM engine and LevelDB storage IO would be where nodes spent most of their time.
 Those all matter. Signature verification is an important part and can be parallelized. Hardware acceleration is another method.
 
