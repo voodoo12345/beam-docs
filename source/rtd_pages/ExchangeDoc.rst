@@ -22,9 +22,10 @@ Deploy Ontology Synchronization Node
 
 2.  Create wallet(not mandatory for sync node)
 
-   - Create the wallet file - wallet.dat that is required for nodes running through the CLI
+Create the wallet file - wallet.dat that is required for nodes running through the CLI
 
 ::
+
      $ ./ontology account add -d
      Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
      	signature algorithm: ecdsa 
@@ -47,6 +48,7 @@ Deploy Ontology Synchronization Node
    - Directory Structure
 
 ::
+
         $ tree
         └── ontology
             ├── ontology
@@ -57,7 +59,9 @@ Deploy Ontology Synchronization Node
 3. Start up node
 
    start up command:
+   
 ::
+
    ./ontology 
 
 .. attention:: By default, the node startup will close the websocket and the rest port. If you want to open above-mentioned ports, you can configure the following parameters:
@@ -93,6 +97,7 @@ Create wallet by CLI
 The exchange needs to create an online wallet to manage user deposit address. A wallet is used to store account (including public and private keys), contract address and other information, which is the most important certificate for users to hold assets. It is important to keep wallet files and wallet passwords safe and prevent them from loss or disclosure. The exchange does not need to create a wallet file for each address. Usually a wallet file can store all the user's deposit addresses. You can also use a cold wallet (offline wallet) as a more secure storage.
 
 ::
+
    $ ./ontology account add -d
 Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
 	signature algorithm: ecdsa 
@@ -128,7 +133,8 @@ To create an address dynamically, you can use the Java SDK's implementation and 
 
   To create a batch of addresses, executing the ./ontology account add -n [n] -w [wallet file] command in the CLI. The -d bracket is an optional parameter and the default value is 1. -w specifies the wallet file and the default file is wallet.dat. For example, to create 100 addresses at one time:
 
-```
+::
+
 $ ./ontology account add -n 100 -d -w wat.dat
 Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
 	signature algorithm: ecdsa 
@@ -156,7 +162,7 @@ Public key: 03de554a6e3eea61aa9f78fa683ce9069ca8980a9f44b85eebe1d2c2e9a611875c
 Signature scheme: SHA256withECDSA
 
 ....
-```
+
 Process Asset Transactions
 ------------------------
 
