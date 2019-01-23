@@ -24,7 +24,7 @@ Deploy Ontology Synchronization Node
 
    - Create the wallet file - wallet.dat that is required for nodes running through the CLI
 
-     ```
+::
      $ ./ontology account add -d
      Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
      	signature algorithm: ecdsa 
@@ -40,25 +40,25 @@ Deploy Ontology Synchronization Node
      Signature scheme: SHA256withECDSA
 
      Create account successfully.
-     ```
 
-     ​
+
+
 
    - Directory Structure
 
-     ```
+::
         $ tree
         └── ontology
             ├── ontology
             └── wallet.dat
-     ```
+
 
 
 3. Start up node
 
    start up command:
-
-   ```./ontology ```
+::
+   ./ontology 
 
 .. attention:: By default, the node startup will close the websocket and the rest port. If you want to open above-mentioned ports, you can configure the following parameters:
 
@@ -92,8 +92,8 @@ Create wallet by CLI
 
 The exchange needs to create an online wallet to manage user deposit address. A wallet is used to store account (including public and private keys), contract address and other information, which is the most important certificate for users to hold assets. It is important to keep wallet files and wallet passwords safe and prevent them from loss or disclosure. The exchange does not need to create a wallet file for each address. Usually a wallet file can store all the user's deposit addresses. You can also use a cold wallet (offline wallet) as a more secure storage.
 
-```
-$ ./ontology account add -d
+::
+   $ ./ontology account add -d
 Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
 	signature algorithm: ecdsa 
 	curve: P-256 
@@ -108,7 +108,7 @@ Public key: 02c17cd91acf618d497f65f1fc4f52de7952c8b2337883f898dda887953cd29dd7
 Signature scheme: SHA256withECDSA
 
 Create account successfully.
-```
+
 **The public and private key generation algorithms of ONT are consistent with NEO. The public key addresses of ONT and NEO corresponding to the same private key are the same.**
 
 Generate deposit address
