@@ -1,55 +1,164 @@
 :orphan:
 
-.. _user_beam_node_guide:
+.. _ExchangeDoc:
 
-Beam Node User Guide
+Exchange Listing Quick Guide
 ====================
 
 General
 ------------------------
 
 
-Beam Node is an essential part of the Beam blockchain and is responsible for validating transactions and blocks. It runs on all platforms: Linux, Windows and Mac (for detalied list of supported and tested platforms please see :ref:`user_supported_platforms`)
+There are two kinds of assets in ONT: native assets and contract assets. Native assets are ONT and ONG. When docking with the exchange, it mainly processes deposit and withdrawal of these two assets.
 
 
-Beam Node can be run in either Mining or Validating mode. 
-
-Mining mode
+Deploy Ontology Synchronization Node
 ------------------------
 
-Beam Node supports two options for mining Beam:
+1.  Get binary from release
+
+ [release page](https://github.com/ontio/ontology/releases)
+
+2.  Server deployment
+
+#### Create wallet(not mandatory for sync node)
+
+   - Create the wallet file - wallet.dat that is required for nodes running through the CLI
+
+     ```
+     $ ./ontology account add -d
+     Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
+     	signature algorithm: ecdsa 
+     	curve: P-256 
+     	signature scheme: SHA256withECDSA 
+     Password:
+     Re-enter Password:
+
+     Index: 1
+     Label: 
+     Address: AWVNFw74G8Sx9vcxGbmh4gT54ayuwb3bcm
+     Public key: 02c17cd91acf618d497f65f1fc4f52de7952c8b2337883f898dda887953cd29dd7
+     Signature scheme: SHA256withECDSA
+
+     Create account successfully.
+     ```
+
+     ​
+
+   - Directory Structure
+
+     ```
+        $ tree
+        └── ontology
+            ├── ontology
+            └── wallet.dat
+     ```
 
 
-1. Using Internal Miner
+3. Start up node
 
-    Beam Node has built in GPU and CPU miners. To start the node with internal miner, specify miner type using `miner_type` parameter. Built in GPU mining is only supported on Linux and Windows platforms.
+   start up command:
 
-2. Using External Miner via Statum Server API
+   ```./ontology ```
 
-    Beam Node provides built in support for Startum API allowing to connect multiple external mining clients to a single node. (see :ref: `user_beam_stratum_server` for more details). To start the node with stratum server use `stratum_port` and `stratum_secrets_path` parameters. Stratum clients can be run together with the Internal Miner
+.. attention:: By default, the node startup will close the websocket and the rest port. If you want to open above-mentioned ports, you can configure the following parameters:
 
-    .. admonition:: Mining keys management
+   ```
+   RESTFUL OPTIONS:
+     --rest            Enable restful api server
+     --restport value  Restful server listening port (default: 20334)
+     
+   WEB SOCKET OPTIONS:
+     --ws            Enable websocket server
+     --wsport value  Ws server listening port (default: 20335)
+   ```
 
-        In order for the mining node to be able to attribute mining rewards to your wallet, it needs a special secret *mining key*. The mining key is derived from the primary secret key by running `export_miner_key` command with --subkey=<node id> parameter in the Beam CLI Wallet (See :ref:`user_cli_wallet_guide` for more details). You can generate a multiple separate mining keys for different mining nodes.
+   ​
 
-        Optionally, in order to allow each mining node to be able to see all rewards mined by all your mining nodes Beam provides an additional option called `owner_key`. Owner key is a secret view key, it can not be used to spend coins, just to identify your mining rewards regardless of which node was used to mine it. Owner key is derived from primary secret key as well using the same `key_export` command, but without additional parameters.
+4. Use CLI Client
 
-        Both keys are protected using Wallet Password, which should also be provided
+.. attention:: The exchange must use a whitelist or firewall to block external server requests, otherwise there will be a serious security risk.
 
+The CLI does not provide remote open/close wallet function and there is no verification process when opening the wallet. Therefore, the security policy needs to be set by the exchange based on its own situation. Since the wallet must remain open in order to process the users' withdrawal, from a security point of view, the wallet must be running on a separate server, and the exchange configures the firewall with reference to the following table.
 
+|               | Mainnet default port |
+| ------------- | -------------------- |
+| Rest Port     | 20334                |
+| Websorcket    | 20335                |
+| Json RPC port | 20336                |
+| Node port     | 20338                |
 
+### CLI instruction
 
+#### Create wallet
 
-Validating mode
-------------------------
+The exchange needs to create an online wallet to manage user deposit address. A wallet is used to store account (including public and private keys), contract address and other information, which is the most important certificate for users to hold assets. It is important to keep wallet files and wallet passwords safe and prevent them from loss or disclosure. The exchange does not need to create a wallet file for each address. Usually a wallet file can store all the user's deposit addresses. You can also use a cold wallet (offline wallet) as a more secure storage.
 
-By default (without `--miner_type` flag) Beam Node is run in validating mode, meaning that mining is disabled. Validating nodes are still very important for the overall health and safety of the network since they:
+```
+$ ./ontology account add -d
+Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
+	signature algorithm: ecdsa 
+	curve: P-256 
+	signature scheme: SHA256withECDSA 
+Password:
+Re-enter Password:
 
-1. Help in propagating transactions and blocks through the network 
-2. Relay SBBS messages to enable Wallet to Wallet communication.
-3. Serve as Dandelion Stem relays to improve P2P level security
+Index: 1
+Label: 
+Address: AWVNFw74G8Sx9vcxGbmh4gT54ayuwb3bcm
+Public key: 02c17cd91acf618d497f65f1fc4f52de7952c8b2337883f898dda887953cd29dd7
+Signature scheme: SHA256withECDSA
 
-If possible, always prefer running a local node either with or without mining!
+Create account successfully.
+```
+####  Generate deposit address
+
+**Note: ONT and ONG address is case-sensitive**
+
+A wallet can store multiple addresses, and the exchange needs to generate a deposit address for each user.
+
+There are two ways to generate deposit addresses:
+
+- When the user first deposits (ONT/ONG), the program dynamically creates the ONT address. Advantages: No manual creation of addresses is required. Disadvantages: It is inconvenient to back up the wallet.
+  
+To create an address dynamically, you can use the Java SDK's implementation and the program will return the created address. Please refer to Java SDK [Create account randomly](#create-account-randomly)
+
+- The exchange creates a batch of ONT addresses in advance and assigns the user an ONT address when the user deposits for the first time (ONT/ONG). Advantages: It is easy to back up wallet; disadvantages: Manually create ONT address when the address is insufficient.
+
+  To create a batch of addresses, executing the ./ontology account add -n [n] -w [wallet file] command in the CLI. The -d bracket is an optional parameter and the default value is 1. -w specifies the wallet file and the default file is wallet.dat. For example, to create 100 addresses at one time:
+
+```
+$ ./ontology account add -n 100 -d -w wat.dat
+Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
+	signature algorithm: ecdsa 
+	curve: P-256 
+	signature scheme: SHA256withECDSA 
+Password:
+Re-enter Password:
+
+Index: 1
+Label: 
+Address: ATh1dt4pKZTASu45VeRChPi3iYmk8nYKJH
+Public key: 03f8e59f0059d11dcec2902c44a9e7a2466adc9b25a61b1d94d2027d13f78ac45a
+Signature scheme: SHA256withECDSA
+
+Index: 2
+Label: 
+Address: AdYpqD8kn3NwBkkDktqfLfT8jJMCaD7BrB
+Public key: 03e05424e711faa1591ee62a20648b45d8328f40c1ad5c479484501445fea62c50
+Signature scheme: SHA256withECDSA
+
+Index: 3
+Label: 
+Address: AY5hDhn2z8ND6F4JF9rQV1a4SDUT4aUr88
+Public key: 03de554a6e3eea61aa9f78fa683ce9069ca8980a9f44b85eebe1d2c2e9a611875c
+Signature scheme: SHA256withECDSA
+
+....
+```
+
+**The public and private key generation algorithms of ONT are consistent with NEO. The public key addresses of ONT and NEO corresponding to the same private key are the same.**
+
 
 
 
