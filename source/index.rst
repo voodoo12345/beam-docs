@@ -167,4 +167,11 @@ To report issues and get support please perform the following steps:
    rtd_pages/dev_understanding_logs.rst
    rtd_pages/dev_consensus_rules.rst
    rtd_pages/dev_local_setup.rst
+   
+.. toctree::
+   :caption: Exchange listing guide
+   :hidden:
+
+   rtd_pages/ExchangeDoc.rst
+
 
