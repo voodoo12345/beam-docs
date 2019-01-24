@@ -22,7 +22,7 @@ Deploy Ontology Synchronization Node
 
 2.  Create wallet(not mandatory for sync node)
 
-Create the wallet file - wallet.dat that is required for nodes running through the CLI
+     Create the wallet file - wallet.dat that is required for nodes running through the CLI
 
 ::
 
@@ -44,8 +44,7 @@ Create the wallet file - wallet.dat that is required for nodes running through t
 
 
 
-
-   - Directory Structure
+    Directory Structure
 
 ::
 
@@ -63,6 +62,8 @@ Create the wallet file - wallet.dat that is required for nodes running through t
 ::
 
    ./ontology 
+
+
 
 .. attention:: By default, the node startup will close the websocket and the rest port. If you want to open above-mentioned ports, you can configure the following parameters:
 
@@ -99,20 +100,22 @@ The exchange needs to create an online wallet to manage user deposit address. A 
 ::
 
    $ ./ontology account add -d
-Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
+   Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
 	signature algorithm: ecdsa 
 	curve: P-256 
 	signature scheme: SHA256withECDSA 
-Password:
-Re-enter Password:
+   Password:
+   Re-enter Password:
 
-Index: 1
-Label: 
-Address: AWVNFw74G8Sx9vcxGbmh4gT54ayuwb3bcm
-Public key: 02c17cd91acf618d497f65f1fc4f52de7952c8b2337883f898dda887953cd29dd7
-Signature scheme: SHA256withECDSA
+   Index: 1
+   Label: 
+   Address: AWVNFw74G8Sx9vcxGbmh4gT54ayuwb3bcm
+   Public key: 02c17cd91acf618d497f65f1fc4f52de7952c8b2337883f898dda887953cd29dd7
+   Signature scheme: SHA256withECDSA
 
-Create account successfully.
+   Create account successfully.
+   
+   
 
 **The public and private key generation algorithms of ONT are consistent with NEO. The public key addresses of ONT and NEO corresponding to the same private key are the same.**
 
@@ -135,33 +138,33 @@ To create an address dynamically, you can use the Java SDK's implementation and 
 
 ::
 
-$ ./ontology account add -n 100 -d -w wat.dat
-Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
+  $ ./ontology account add -n 100 -d -w wat.dat
+  Use default setting '-t ecdsa -b 256 -s SHA256withECDSA' 
 	signature algorithm: ecdsa 
 	curve: P-256 
 	signature scheme: SHA256withECDSA 
-Password:
-Re-enter Password:
+  Password:
+  Re-enter Password:
 
-Index: 1
-Label: 
-Address: ATh1dt4pKZTASu45VeRChPi3iYmk8nYKJH
-Public key: 03f8e59f0059d11dcec2902c44a9e7a2466adc9b25a61b1d94d2027d13f78ac45a
-Signature scheme: SHA256withECDSA
+  Index: 1
+  Label: 
+  Address: ATh1dt4pKZTASu45VeRChPi3iYmk8nYKJH
+  Public key: 03f8e59f0059d11dcec2902c44a9e7a2466adc9b25a61b1d94d2027d13f78ac45a
+  Signature scheme: SHA256withECDSA
 
-Index: 2
-Label: 
-Address: AdYpqD8kn3NwBkkDktqfLfT8jJMCaD7BrB
-Public key: 03e05424e711faa1591ee62a20648b45d8328f40c1ad5c479484501445fea62c50
-Signature scheme: SHA256withECDSA
+  Index: 2
+  Label: 
+  Address: AdYpqD8kn3NwBkkDktqfLfT8jJMCaD7BrB
+  Public key: 03e05424e711faa1591ee62a20648b45d8328f40c1ad5c479484501445fea62c50
+  Signature scheme: SHA256withECDSA
 
-Index: 3
-Label: 
-Address: AY5hDhn2z8ND6F4JF9rQV1a4SDUT4aUr88
-Public key: 03de554a6e3eea61aa9f78fa683ce9069ca8980a9f44b85eebe1d2c2e9a611875c
-Signature scheme: SHA256withECDSA
+  Index: 3
+  Label: 
+  Address: AY5hDhn2z8ND6F4JF9rQV1a4SDUT4aUr88
+  Public key: 03de554a6e3eea61aa9f78fa683ce9069ca8980a9f44b85eebe1d2c2e9a611875c
+  Signature scheme: SHA256withECDSA
 
-....
+
 
 Process Asset Transactions
 ------------------------
@@ -183,10 +186,11 @@ For user deposit, the exchange needs to understand the following:
 - The Ontology wallet is a full node. To synchronize the blocks, the wallet needs to be online. You can view the current block height through the CLI command and judge the node status.
 
 
-  ```
+::
+
   $ ./ontology info curblockheight
   CurrentBlockHeight:2
-  ```
+
 
 - Transfers between users within the exchange do not need to go through the blockchain, so the exchange can directly modify the users' balance in the database. Only deposit and withdrawal need to go through the blockchain.
 
@@ -196,7 +200,8 @@ Example:
 
 2. Monitor block information by CLI ```./ontology info block <block number | block hash>```  
 
-   ```
+::
+
    $ ./ontology info block 209304
    {
       "Hash": "83a70a5380532ededb4f3d65bcd4d3a8cd52f7f87bf1863d68bada59b95133d4",
@@ -214,7 +219,7 @@ Example:
             "0217c25948722c14c1a6fa8e06b78691e722f4598585805671b0beaa7fd6c7662b"
          ],
          "SigData": [
-            "a6faf7a3fe356e36977c249f858b8f0a11b719ae310470948e374b69cfb4c3f3d295ac3e81244ebbfc13a4ea94c3deee132ee9ef0caa745b4b6eaf21aeb92c40"
+                 "a6faf7a3fe356e36977c249f858b8f0a11b719ae310470948e374b69cfb4c3f3d295ac3e81244ebbfc13a4ea94c3deee132ee9ef0caa745b4b6eaf21aeb92c40"
          ],
          "Hash": "83a70a5380532ededb4f3d65bcd4d3a8cd52f7f87bf1863d68bada59b95133d4"
       },
@@ -227,7 +232,7 @@ Example:
             "Payer": "f72c773b346d3cdf9672fcf9d1a9e0daababa270",
             "TxType": 209,
             "Payload": {
-               "Code": "00c66b14e98f4998d837fcdd44a50561f7f32140c7c6c2606a7cc814dd803188dcc41329b6e9faa775a6085269b5db376a7cc808e8030000000000006a7cc86c51c1087472616e736665721400000000000000000000000000000000000000010068164f6e746f6c6f67792e4e61746976652e496e766f6b65",
+               "Code":   "00c66b14e98f4998d837fcdd44a50561f7f32140c7c6c2606a7cc814dd803188dcc41329b6e9faa775a6085269b5db376a7cc808e8030000000000006a7cc86c51c1087472616e736665721400000000000000000000000000000000000000010068164f6e746f6c6f67792e4e61746976652e496e766f6b65",
                "GasLimit": 0
             },
             "Attributes": [],
@@ -293,9 +298,10 @@ Example:
 
 3. Get all transaction information in the block according to Transaction Hash by CLI  ```./ontology info status```
 
-```
-$ ./ontology info status bce10eb97c6cd122131e448ddf415bcd15aabbddd466e6850074c6c839a26596
-Transaction states:
+::
+
+  $ ./ontology info status bce10eb97c6cd122131e448ddf415bcd15aabbddd466e6850074c6c839a26596
+  Transaction states:
 {
    "TxHash": "bce10eb97c6cd122131e448ddf415bcd15aabbddd466e6850074c6c839a26596",
    "State": 1,
@@ -312,7 +318,7 @@ Transaction states:
       }
    ]
 }
-```
+
 
 "State" is 1 representing transaction success, and 0 representing the failure
 
@@ -348,7 +354,8 @@ With regard to user withdrawal, the exchange needs to complete the following ope
 
 2. Use the CLI command to transfer tokens to the user's withdrawal address:
 
-```
+::
+
    $ ./ontology asset transfer --from Ad4pjz2bqep4RhQrUAzMuZJkBC3qJ1tZuT --to AS3SCXw8GKTEeXpdwVw7EcC4rqSebFYpfb --amount 10 
    Password:
    Transfer ONT
@@ -360,7 +367,7 @@ With regard to user withdrawal, the exchange needs to complete the following ope
    Tip:
      Using './ontology info status 49a705f6beb6a15b92493db496f56e8bcddc95b803dac1e4a02b4579ce760b3f' to query transaction status
 
-   ```
+   
 
   The list of parameters for the command is as follows:
 
@@ -397,7 +404,8 @@ With regard to user withdrawal, the exchange needs to complete the following ope
 
    - Use the returned transaction hash to query directly:
 
-   ```
+::
+
      $ ./ontology info status 49a705f6beb6a15b92493db496f56e8bcddc95b803dac1e4a02b4579ce760b3f
      Transaction states:
      {
@@ -417,7 +425,7 @@ With regard to user withdrawal, the exchange needs to complete the following ope
         ]
      }
     
-     ```
+   
     
      
 
@@ -864,18 +872,19 @@ The gasprice parameter specifies the gas price of the transfer transaction. The 
 --gaslimit  
 The gaslimit parameter specifies the gas limit of the transfer transaction. The gas limit of the transaction cannot be less than the minimum gas limit set by the node's transaction pool, otherwise the transaction will be rejected. Gasprice * gaslimit is actual ONG costs. The default value is 30000.
 
-```
-$ ./ontology asset withdrawong 1
-Password:
-Claim Ong:
-  Account:Ad4pjz2bqep4RhQrUAzMuZJkBC3qJ1tZuT
-  Amount:23698.8755104
-  TxHash:c696033f1589a88c7b849dbd2ad0c13a9ca695c3220e4f846f9b1096d0972b80
+::
 
-Tip:
+  $ ./ontology asset withdrawong 1
+  Password:
+  Claim Ong:
+    Account:Ad4pjz2bqep4RhQrUAzMuZJkBC3qJ1tZuT
+    Amount:23698.8755104
+    TxHash:c696033f1589a88c7b849dbd2ad0c13a9ca695c3220e4f846f9b1096d0972b80
+
+ Tip:
   Using './ontology info status c696033f1589a88c7b849dbd2ad0c13a9ca695c3220e4f846f9b1096d0972b80' to query transaction status
 
-```
+
 
 Same as user deposit，you can use ```./ontology info status c696033f1589a88c7b849dbd2ad0c13a9ca695c3220e4f846f9b1096d0972b80``` to query the result of the ONG withdrawal.
 
