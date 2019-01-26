@@ -1,4 +1,4 @@
-.. _user_desktop_wallet_guide:
+.. _Owallet_desktop_wallet_guide:
 
 
 .. _Owallet_desktop_wallet_guide:
