@@ -145,7 +145,7 @@ To report issues and get support please perform the following steps:
    :caption: User's Guide
    :hidden:
 
-   rtd_pages/user_desktop_wallet_guide.rst
+   rtd_pages/Owallet_desktop_wallet_guide.rst
    rtd_pages/user_cli_wallet_guide.rst
    rtd_pages/user_beam_node_guide.rst
    rtd_pages/user_backup_restore.rst
