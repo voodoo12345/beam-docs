@@ -1,6 +1,5 @@
 .. _user_desktop_wallet_guide:
 
-.. warning:: The following document is still under construction and is subject to changes.
 
 .. _Owallet_desktop_wallet_guide:
 
