@@ -38,43 +38,22 @@ Installing the Owallet client
 
 Once the application image is downloaded, double-click the icon to start the installation.
 
-Mac
+Windows
 ---
 
-When you click on the .exe file you will see a screen with Disclaimer and End User License Agreement. Please read carefully and click 'Agree'.
+When you click on the .exe file you will see a screen with Windows Installer . Please click 'Install'.
 
 .. figure:: images/desktop/02_installing/install1.png
    :alt: Mac EULA
 
-On the next screen, drag the Owallet icon into the Applications folder to install.
+Now, launch the OWallet from the installer. When notification appears, click 'Finish'.
 
 .. figure:: images/desktop/02_installing/install2.png
    :alt: Mac Install
 
 
-When you will try to open the Owallet for the first time, you will receive a security warning stating that OWallet was created by an unrecognized developer. We are working to elimitate the warning, meanwhile follow the steps below to launch OWallet app on your Mac.
+.. attention:: When you will try to open the Owallet for the first time, you will receive a security warning stating that OWallet was created by an unrecognized developer. We are working to elimitate the warning, meanwhile ignore the warning.
 
-Open 'System Preferences'.
-
-.. figure:: images/desktop/02_installing/03.png
-   :alt: Mac Security
-
-Locate and click 'Security & Privacy' settings.
-
-.. figure:: images/desktop/02_installing/04.png
-   :alt: Mac Security
-
-Click the lock icon in the bottom left corner of the dialog to unlock.
-
-.. figure:: images/desktop/02_installing/05.png
-   :alt: Mac Security
-
-Change the 'Allow apps downloaded from' setting from 'App Store' to 'App Store and identified developers'. Click the lock icon again when done making changes. 
-
-.. figure:: images/desktop/02_installing/06.png
-   :alt: Mac Security
-
-Now, launch the Beam Wallet from the Applications folder. When notification appears, click 'Open'.
 
 .. figure:: images/desktop/02_installing/07.png
    :alt: Mac Security
