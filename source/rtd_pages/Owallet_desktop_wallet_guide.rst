@@ -64,9 +64,10 @@ Where are the files?
 
 Once OWallet desktop app is installed, the wallet data filers are stored separately from the binaries. 
 
-The locations of all the files are described here: :ref:`Files and locations`
+The locations of all the files which you can set here.
 
-..note::When the OWallet app is running, right click on it and select *Options | Keep in dock* for easy access of the app in the future.
+.. figure:: images/desktop/02_installing/install3.png
+   :alt: Mac Security
 
 
 Creating new wallet
