@@ -73,9 +73,9 @@ The locations of all the files which you can set here.
 Creating new wallet
 -------------------
 
-Once you launch the wallet for the first time, click 'Create new wallet'
+Once you launch the wallet , click 'Create new wallet'
 
-.. figure:: images/desktop/03_creating_new_wallet/01.jpg
+.. figure:: images/desktop/02_installing/install4.png
    :alt: Choosing between new and restore
 
 
