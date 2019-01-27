@@ -56,17 +56,6 @@ Now, launch the OWallet from the installer. When notification appears, click 'Fi
    :alt: Mac Security
 
 
-Where are the files?
---------------------
-
-Once OWallet desktop app is installed, the wallet keystore files are stored separately from the wallet data files. 
-
-The locations of the keystore files can be set here.
-
-.. figure:: images/desktop/02_installing/install3.png
-   :alt: Mac Security
-
-
 Creating new wallet
 -------------------
 
@@ -75,7 +64,20 @@ Once you launch the wallet , click 'Create new wallet'
 .. figure:: images/desktop/02_installing/install4.png
    :alt: Choosing between new and restore
 
+Setting wallet password
+-----------------------
 
+To access your OWallet, you will need to create a password. Your wallet password provides with a second security layer in case someone gains access to your computer or has stolen your wallet database file. It is important to choose a strong password. 
+
+
+.. figure:: images/desktop/02_installing/install5.png
+   :alt: Example of a weak password
+
+The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 6 characters long with combination of letters, numbers, and symbols.
+
+.. figure:: images/desktop/02_installing/install6.png
+   :alt: Example of a stronger password 
+   
 Generating seed phrase
 ----------------------
 
@@ -120,22 +122,17 @@ Only when you typed all the selected words correctly, you will be allowed to pro
    :alt: Indicate correct words 
 
 
-Setting wallet password
------------------------
-
-To access your OWallet, you will need to create a password. This password is not the same as the seed phrase. Seed phrase identifies a wallet and enables access to all the funds stored in it from any device. Your wallet password provides with a second security layer in case someone gains access to your computer or has stolen your wallet database file. It is important to choose a strong password. 
 
 
-.. figure:: images/desktop/03_creating_new_wallet/07.jpg
-   :alt: Example of a weak password
-
-The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with combination of letters, numbers, and symbols.
-
-.. figure:: images/desktop/03_creating_new_wallet/08.jpg
-   :alt: Example of a stronger password 
-
-Save keystore file path
+Change keystore file path
 -----------------------------------
+
+The wallet keystore files are stored separately from the wallet data files. 
+
+The locations of the keystore files can be set here.
+
+.. figure:: images/desktop/02_installing/install3.png
+   :alt: Mac Security
 
 
 
