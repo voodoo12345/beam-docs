@@ -41,14 +41,14 @@ Once the application image is downloaded, double-click the icon to start the ins
 Mac
 ---
 
-When you click on the .dmg file you will see a screen with Disclaimer and End User License Agreement. Please read carefully and click 'Agree'.
+When you click on the .exe file you will see a screen with Disclaimer and End User License Agreement. Please read carefully and click 'Agree'.
 
-.. figure:: images/desktop/02_installing/01.png
+.. figure:: images/desktop/02_installing/install1.png
    :alt: Mac EULA
 
 On the next screen, drag the Owallet icon into the Applications folder to install.
 
-.. figure:: images/desktop/02_installing/02.png
+.. figure:: images/desktop/02_installing/install2.png
    :alt: Mac Install
 
 
