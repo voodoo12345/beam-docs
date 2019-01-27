@@ -38,7 +38,7 @@ Installing the Owallet client on Windows
 
 Once the application image is downloaded, double-click the icon to start the installation.
 
-When you click on the .exe file you will see a screen with Windows Installer . Please click 'Install'.
+When you click on the .exe file you will see a screen with Windows Installer . Please substitute your preferred install path and click 'Install'.
 
 .. figure:: images/desktop/02_installing/install1.png
    :alt: Mac EULA
