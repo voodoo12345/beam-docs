@@ -59,9 +59,9 @@ Now, launch the OWallet from the installer. When notification appears, click 'Fi
 Where are the files?
 --------------------
 
-Once OWallet desktop app is installed, the wallet data filers are stored separately from the binaries. 
+Once OWallet desktop app is installed, the wallet keystore files are stored separately from the wallet data files. 
 
-The locations of all the files which you can set here.
+The locations of the keystore files can be set here.
 
 .. figure:: images/desktop/02_installing/install3.png
    :alt: Mac Security
