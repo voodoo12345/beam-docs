@@ -33,13 +33,10 @@ Substitute your preferred path instead of the one in the example above.
 .. note:: As the wallet will be continuously updated, the actual version numbers and SHA values might be different from the screenshot at the moment of reading.
 
 
-Installing the Owallet client
+Installing the Owallet client on Windows
 --------------------------
 
 Once the application image is downloaded, double-click the icon to start the installation.
-
-Windows
----
 
 When you click on the .exe file you will see a screen with Windows Installer . Please click 'Install'.
 
